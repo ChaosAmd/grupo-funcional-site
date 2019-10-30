@@ -14,7 +14,7 @@ Para instalar o projeto é necessário ter instalado na máquina a plataforma [S
 $ stack install hakyll --resolver lts-12.26
 ```
 
-Após isto baixe o zip do projeto ou clone-o
+Após isto baixe o zip do projeto ou clone-o:
 ```
 $ git clone https://github.com/ChaosAmd/grupo-funcional-site.git
 ````
