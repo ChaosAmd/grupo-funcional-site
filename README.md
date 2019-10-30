@@ -11,14 +11,14 @@ O site foi construído sob a plataforma [Hakyll](https://jaspervdj.be/hakyll/ind
 Para instalar o projeto é necessário ter instalado na máquina a plataforma [Stack](https://docs.haskellstack.org/en/stable/README/). Recomendável o uso do ghc dentro do mesmo ambiente. Para instalar a dependência do projeto, rode o seguinte comando:
 
 ```
-$stack install hakyll --resolver lts-12.26
+$ stack install hakyll --resolver lts-12.26
 ```
 
 À seguir vá a pasta instalada e execute o stack init para gerar o yaml. Importante notar que a versão é lts-12.26, para não dar conflito com outros ambientes do stack.
 
 ```
-$cd instaled_path/grupo-funcional-site
-$stack init stack init --resolver lts-12.26
+$ cd instaled_path/grupo-funcional-site
+$ stack init stack init --resolver lts-12.26
 ```
 
 Caso ocorra erro na instalação, comunique na aba Issues do página deste github.
