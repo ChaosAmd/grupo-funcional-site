@@ -23,6 +23,9 @@ Doravante à nova pasta, rode:
 $ stack build
 $ stack exec site build
 ```
+
+Para cada comando que modifique o gerador, execute o build, para modificações no conteúdo das páginas, basta o segundo comando.
+
 Pronto! O projeto foi compilado e os arquivos html gerados. Para vizualizá-los basta executar o seu servidor preferido. Mas para fins de praticidade é utilizado o preview server:
 ```
 $ stack exec site watch
