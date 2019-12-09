@@ -1,14 +1,14 @@
 # Tipos Dependentes
 
-Na programação funcional, funções são cidadões de primeira classe;
+Na programação funcional, as funções são cidadãos de primeira classe, isto é,
 podem ser passadas como parâmetros em funções e serem retornadas.
 
-De forma análoga, em linguagens com tipos dependentes, os tipos são cidadões
-de primeira classe; podem ser passados como argumentos em funções e serem retonados por elas.
+De forma análoga em linguagens com tipos dependentes, os tipos são cidadãos
+de primeira classe, podem ser passados como argumentos em funções e serem retonados por elas.
 Não só os tipos podem ser manipulados como se fossem valores, mas os valores podem ser parte
 integrante dos próprios tipos.
 
-Observe o exemplo abaixo, que mostra uma função que retorna tipos como se fossem valores.
+Observe o exemplo abaixo, que mostra uma função que retorna tipos como se fossem valores:
 (Todos os exemplos neste texto serão em Idris, uma linguagem semelhante a Haskell mas com tipos dependentes.)
 
 ```
@@ -17,7 +17,7 @@ numOrChar True = Nat
 numOrChar False = Char
 ```
 
-Com tipos dependentes, o tipo de retorno de uma função pode depender não apenas do tipo da entrada, como neste exemplo em Haskell
+Com tipos dependentes, o tipo de retorno de uma função pode depender não apenas do tipo da entrada, como neste exemplo em Haskell:
 
 ```
 first :: [a] -> a
@@ -34,7 +34,7 @@ letterOrInteger False = 'b'
 
 Um exemplo clássico é a definição de vetor em Idris. Perceba que o tamanho do vetor já é parte do próprio tipo do vetor --- 
 um vetor com tamanho 2 possui um tipo diferente de um vetor com tamanho 3, e uma função que recebe vetores de qualquer tamanho
-deve ser polimórfica.
+deve ser polimórfica:
 
 ```
 data Vect : Nat -> Type -> Type where
